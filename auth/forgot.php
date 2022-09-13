@@ -30,7 +30,7 @@
 		}
 	}
 ?>
-
+<!-- Html begins -->
 <html>
 <head><title>Forgot Password</title></head>
 	<style>
