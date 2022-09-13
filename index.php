@@ -88,7 +88,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Logo/Home</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Rentals</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -138,7 +138,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Search</h2>
-            <h3 class="section-subheading text-muted">Search rooms or homes for hire.</h3>
+            <h3 class="section-subheading text-muted">Search rooms or homes for rent.</h3>
           </div>
         </div>
         <div class="row">
@@ -187,7 +187,7 @@
                             <h4 class="text-center">Owner Details</h4>';
                               echo '<p><b>Owner Name: </b>'.$value['fullname'].'</p>';
                               echo '<p><b>Mobile Number: </b>'.$value['mobile'].'</p>';
-                              echo '<p><b>Alternate Number: </b>'.$value['alternat_mobile'].'</p>';
+                             // echo '<p><b>Alternate Number: </b>'.$value['alternat_mobile'].'</p>';
                               echo '<p><b>Email: </b>'.$value['email'].'</p>';
                               echo '<p><b>Country: </b>'.$value['country'].'</p><p><b> State: </b>'.$value['state'].'</p><p><b> City: </b>'.$value['city'].'</p>';
                               if ($value['image'] !== 'uploads/') {
