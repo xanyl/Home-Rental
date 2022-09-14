@@ -30,6 +30,7 @@
 		));
 	$total_auth_user_rent_ap = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
+<?php include '../include/side-nav.php';?>
 <?php include '../include/header.php';?>	
 	<!-- Header nav -->	
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212529;" id="mainNav">
@@ -52,12 +53,12 @@
       </div>
     </nav>
 	<!-- end header nav -->	
-<?php include '../include/side-nav.php';?>
+
 	<section class="wrapper" style="margin-left: 16%;margin-top: -11%;">
 		<!-- <div class="container"> -->
 			<!-- <div class="row"> -->
 				<div class="col-md-12">
-					<h1>Dash board</h1>
+					<h1>Dashboard</h1>
 					<div class="row">						
 						<?php 
 							if($_SESSION['role'] == 'admin'){ 

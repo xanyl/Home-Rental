@@ -42,7 +42,7 @@
 	<!-- Services -->
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212529;" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="../index.php">Logo/Home</a>
+        <a class="navbar-brand js-scroll-trigger" href="../index.php">Home logo</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -79,6 +79,9 @@
 					  <div class="form-group">
 					    <label for="exampleInputPassword1">Password</label>
 					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" required>
+					  </div>
+					  <div class="form-group">
+						
 					  </div>
 					  <button type="submit" class="btn btn-primary" name='login' value="Login">Submit</button>
 					</form>				 

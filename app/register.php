@@ -169,6 +169,7 @@
 		$errMsg = 'Registration successfull. Thank you';
 	}
 ?>
+<?php include '../include/side-nav.php';?>
 <?php include '../include/header.php';?>
 	<!-- Header nav -->	
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212529;" id="mainNav">
@@ -191,10 +192,10 @@
       </div>
     </nav>
 	<!-- end header nav -->
-<?php include '../include/side-nav.php';?>
-<section class="wrapper" style="margin-left: 16%;margin-top: -11%;">
+
+<section class="wrapper" style="margin-left: 26%;margin-top:-5%;">
 	<!-- Nav tabs -->
-	<ul class="nav nav-tabs" role="tablist">
+	<ul class="nav nav-tabs " role="tablist">
 	  <li class="nav-item">
 	    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Individual Home Registration</a>
 	  </li>
@@ -226,3 +227,4 @@
 		$('#rowCount'+removeNum).remove();
 	}
 </script>
+

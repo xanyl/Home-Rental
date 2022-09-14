@@ -40,6 +40,7 @@
 		// echo "<br><br><br>";	
 		// print_r($data);	
 ?>
+<?php include '../include/side-nav.php';?>
 <?php include '../include/header.php';?>
 
 	<!-- Header nav -->	
@@ -64,7 +65,7 @@
     </nav>
 	<!-- end header nav -->
 	<section style="padding-left:0px;">
-		<?php include '../include/side-nav.php';?>
+		
 	</section>
 
 <section class="wrapper" style="margin-left: 16%;margin-top: -23%;">
