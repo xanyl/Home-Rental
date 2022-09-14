@@ -32,6 +32,7 @@
 
 		// print_r($data);	
 ?>
+<?php include '../include/side-nav.php';?>
 <?php include '../include/header.php';?>
 	<!-- Header nav -->	
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212529;" id="mainNav">
@@ -54,8 +55,8 @@
       </div>
     </nav>
 	<!-- end header nav -->
-<?php include '../include/side-nav.php';?>
-<section class="wrapper" style="margin-left:16%;margin-top: -11%;">
+
+<section class="wrapper" style="margin-left:16%;margin-top: -5%;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -64,7 +65,7 @@
 						echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
 					}
 				?>
-				<h2>List Of Usres</h2>
+				<h2>List Of Users</h2>
 				<div class="table-responsive text-center">
 					<form action="" method="post">
 						<table class="table table-bordered">

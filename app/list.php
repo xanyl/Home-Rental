@@ -41,6 +41,8 @@
 		// print_r($data);	
 ?>
 <?php include '../include/side-nav.php';?>
+
+
 <?php include '../include/header.php';?>
 
 	<!-- Header nav -->	

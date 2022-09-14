@@ -35,7 +35,7 @@
 	<!-- Header nav -->	
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212529;" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="../index.php">Logo/Home</a>
+        <a class="navbar-brand js-scroll-trigger" href="../index.php">Logo /Home</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -54,7 +54,7 @@
     </nav>
 	<!-- end header nav -->	
 
-	<section class="wrapper" style="margin-left: 16%;margin-top: -11%;">
+	<section class="wrapper" style="margin-left: 15%;margin-top: auto;">
 		<!-- <div class="container"> -->
 			<!-- <div class="row"> -->
 				<div class="col-md-12">
@@ -64,7 +64,8 @@
 							if($_SESSION['role'] == 'admin'){ 
 								echo '<div class="col-md-3">';
 								echo '<a href="../app/users.php"><div class="alert alert-warning" role="alert">';
-								echo '<b>Registered Users: <span class="badge badge-pill badge-success">'.$count['register_user'].'</span></b>';
+								echo '<a href="../app/users.php"><img src="..\assets\img\users.jpg" width="220" height="200" style="margin-left: 5%;margin-top: auto;"></a>';
+								echo '<b style="margin-left: 15%;margin-top: auto;">Registered Users: <span class="badge badge-pill badge-success">'.$count['register_user'].'</span></b>';
 								echo '</div></a>';
 								echo '</div>';
 							} 
