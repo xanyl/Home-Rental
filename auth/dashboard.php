@@ -34,7 +34,7 @@
 	<!-- Header nav -->	
 	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212529;" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="../index.php">Logo/Home</a>
+        <a class="navbar-brand js-scroll-trigger" href="../index.php">Rentals</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -57,7 +57,7 @@
 		<!-- <div class="container"> -->
 			<!-- <div class="row"> -->
 				<div class="col-md-12">
-					<h1>Dash board</h1>
+					<h1>Dashboard</h1>
 					<div class="row">						
 						<?php 
 							if($_SESSION['role'] == 'admin'){ 
