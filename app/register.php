@@ -171,8 +171,9 @@
 ?>
 <?php include '../include/side-nav.php';?>
 <?php include '../include/header.php';?>
+
 	<!-- Header nav -->	
-	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212529;" id="mainNav">
+	<!-- <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#212529;" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="../index.php">Logo/Home</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -190,10 +191,10 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 	<!-- end header nav -->
 
-<section class="wrapper" style="margin-left: 26%;margin-top:-5%;">
+<section class="wrapper" style="margin-left:20%;margin-top:-5%;">
 	<!-- Nav tabs -->
 	<ul class="nav nav-tabs " role="tablist">
 	  <li class="nav-item">

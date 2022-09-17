@@ -17,13 +17,13 @@
     <script src="../assets/js/rent.js"></script>
   </body>
    <!-- Footer -->
-   <footer style="background-color: #ccc; ">
+   <!-- <footer style="background-color: #ccc;  ">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Online Room Rental 2022</span>
+          <div class="col">
+            <span class="copyright alert-light">Copyright &copy; Online Room Rental 2022</span>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="#">
@@ -44,5 +44,5 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 </html>

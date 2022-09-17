@@ -1,23 +1,4 @@
-<?php
-	require '../config/config.php';
-	if(empty($_SESSION['username']))
-		header('Location: login.php');	
-
-		try {
-			$stmt = $connect->prepare('SELECT * FROM users');
-			$stmt->execute();
-			$data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-		}
-		catch(PDOException $e) {
-			$errMsg = $e->getMessage();
-		}	
-		// print_r($data);	
-?>
-<?php include '../include/side-nav.php';?>
-<?php include '../include/header.php';?>
-	
-
-<section class="wrapper" style="margin-left:16%;margin-top: ;">
+<section class="wrapper">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -26,8 +7,12 @@
 						echo '<div style="color:#FF0000;text-align:center;font-size:17px;">'.$errMsg.'</div>';
 					}
 				?>
-				<h2>List Of Users</h2>
-				<div class="table-responsive">
+				<div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Recent Activity</span>
+                </div>
+				<div class="table">
 					<table class="table table-bordered">
 					  <thead>
 					    <tr>
@@ -60,5 +45,3 @@
 		</div>
 	</div>
 </section>
-
-<?php include '../include/footer.php';?>
