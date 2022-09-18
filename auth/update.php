@@ -34,7 +34,7 @@
 					<hr>
 					Password <br>
 					<input type="password" name="password" value="<?php echo $_SESSION['password'] ?>" class="box" /><br/><br />
-					Vafify Password <br>
+					Verify Password <br>
 					<input type="password" name="passwordVarify" value="<?php echo $_SESSION['password'] ?>" class="box" /><br/><br />
 					<input type="submit" name='update' value="Update" class='submit'/><br />
 				</form>
