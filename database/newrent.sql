@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 04, 2019 at 11:23 AM
--- Server version: 5.7.14
--- PHP Version: 7.1.9
+-- Generation Time: Sep 18, 2022 at 08:17 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -33,13 +34,6 @@ CREATE TABLE `cmps` (
   `username` varchar(200) DEFAULT NULL,
   `fullname` varchar(200) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `cmps`
---
-
-INSERT INTO `cmps` (`id`, `name`, `cmp`, `username`, `fullname`) VALUES
-(1, 'f', 'f', 'admin', 'Mahantesh Kumbar');
 
 -- --------------------------------------------------------
 
@@ -68,9 +62,9 @@ CREATE TABLE `room_rental_registrations` (
   `image` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `open_for_sharing` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `other` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `vacant` int(1) NOT NULL DEFAULT '1',
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `vacant` int(1) NOT NULL DEFAULT 1,
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT current_timestamp(),
   `user_id` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -79,9 +73,9 @@ CREATE TABLE `room_rental_registrations` (
 --
 
 INSERT INTO `room_rental_registrations` (`id`, `fullname`, `mobile`, `alternat_mobile`, `email`, `country`, `state`, `city`, `landmark`, `rent`, `sale`, `deposit`, `plot_number`, `rooms`, `address`, `accommodation`, `description`, `image`, `open_for_sharing`, `other`, `vacant`, `created_at`, `updated_at`, `user_id`) VALUES
-(13, 'Mahantesh Kumbar', '2345676567', '98888787', 'admin@admin.com', 'india', 'karnataka', 'Belagavi', 'aaaaaa', '3', '12', '3', '78 nh', '2bhk', 'dsdsd', '4', 'dssd', 'uploads/', NULL, 'zx', 0, '2018-02-16 12:21:43', '2018-02-16 12:21:43', 1),
-(14, 'jelly fish', '2345676997', '', 'chet@gmrail.com', 'india', 'karnataka', 'Belagavi', '', '1232', '12', '33333', '78 nh', '1bhk', 'port road bgm', '', '', 'uploads/', NULL, NULL, 1, '2018-03-09 05:06:43', '2018-03-09 05:06:43', 2),
-(15, 'aaa', '2222222222', '', 'admin@admmmin.com', 'india', 'karnataka', 'Belagavi', '', '1232', '12666', '33333', '78 nh', '1bhk', 'port road bgm', 'wifi,pridge', 'good to see', 'uploads/Penguins.jpg', NULL, NULL, 1, '2018-04-04 11:19:09', '2018-04-04 11:19:09', 1);
+(22, 'Anil Kumkijijliar Tiwari', '9817119785', '', 'anil@sthudent.pu.edu.np', 'Nepal', 'Gandaki', 'pokhara', 'shg', '100', '10', '1000', '3343', '12', 'pokhara-32', 'akk', 'hi', 'uploads/20220524_100539207_iOS.jpg', NULL, NULL, 0, '2022-09-17 17:16:26', '2022-09-17 17:16:26', 1),
+(23, 'Anil Kumar Tiwari', '9817118775', '', 'anil@studadaent.pu.edu.np', 'Nepal', 'Gandaki', 'pokhara', 'hgj', '100', '10', '1000', '33432', '12', 'pokhara-31', 'akkd', 'dfvdfbh', 'uploads/anil.png', NULL, NULL, 0, '2022-09-17 18:24:40', '2022-09-17 18:24:40', 11),
+(21, 'Anil Kumar Tiwari', '9817119775', '', 'anil@student.pu.edu.np', 'Nepal', 'Gandaki', 'pokhara', 'shg', '100', '10', '1000', '123', '12', 'pokhara-31', 'all', 'hi', 'uploads/', NULL, NULL, 1, '2022-09-15 18:27:46', '2022-09-15 18:27:46', 1);
 
 -- --------------------------------------------------------
 
@@ -115,18 +109,11 @@ CREATE TABLE `room_rental_registrations_apartment` (
   `image` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `open_for_sharing` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `other` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `vacant` int(1) NOT NULL DEFAULT '1',
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `vacant` int(1) NOT NULL DEFAULT 1,
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT current_timestamp(),
   `user_id` int(10) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `room_rental_registrations_apartment`
---
-
-INSERT INTO `room_rental_registrations_apartment` (`id`, `fullname`, `mobile`, `alternat_mobile`, `email`, `country`, `state`, `city`, `landmark`, `rent`, `deposit`, `plot_number`, `apartment_name`, `ap_number_of_plats`, `rooms`, `floor`, `purpose`, `own`, `area`, `address`, `accommodation`, `description`, `image`, `open_for_sharing`, `other`, `vacant`, `created_at`, `updated_at`, `user_id`) VALUES
-(3, 'mahantesh', '2345676567', '', 'admin@admddin.com', 'india', 'karnataka', 'Belagavi', 'near ramdev', '1212', '22222', '78 nh', 'mant apartment', '101', '2bhk', '2nd', 'Residential', 'rented', '1sqr feet', 'port road bgm', 'wifi', 'well ', 'uploads/Jellyfish.jpg', NULL, NULL, 1, '2018-04-04 11:20:56', '2018-04-04 11:20:56', 1);
 
 -- --------------------------------------------------------
 
@@ -141,10 +128,10 @@ CREATE TABLE `users` (
   `username` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_at` timestamp NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NULL DEFAULT current_timestamp(),
   `role` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT 'user',
-  `status` int(1) NOT NULL DEFAULT '1'
+  `status` int(1) NOT NULL DEFAULT 1
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -152,8 +139,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `fullname`, `mobile`, `username`, `email`, `password`, `created_at`, `updated_at`, `role`, `status`) VALUES
-(1, 'Mahantesh Kumbar', '9879879787', 'admin', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', NULL, NULL, 'admin', 1),
-(2, 'Mahantesh Kumbar', '56456565', 'manu', 'mant1@gmail.com', '9aee390f19345028f03bb16c588550e1', '2018-02-08 06:53:53', '2018-02-08 06:53:53', 'user', 1);
+(1, 'Anil K. Tiwari', '9657840498', 'admin', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', NULL, NULL, 'admin', 1),
+(11, 'Anil', '9817119775', 'anil645', 'aniltiwari645@gmail.com', 'c4003d4ede2d5607a80681f15a0a46bc', '2022-09-14 02:02:51', '2022-09-14 02:02:51', 'user', 1);
 
 --
 -- Indexes for dumped tables
@@ -196,22 +183,27 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `cmps`
 --
 ALTER TABLE `cmps`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT for table `room_rental_registrations`
 --
 ALTER TABLE `room_rental_registrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
 --
 -- AUTO_INCREMENT for table `room_rental_registrations_apartment`
 --
 ALTER TABLE `room_rental_registrations_apartment`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
