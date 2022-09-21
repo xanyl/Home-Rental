@@ -23,7 +23,7 @@
 				    <input type="text" class="form-control" id="mobile" placeholder="Mobile" name="mobile" value="<?php echo $data['mobile']?$data['mobile']:''; ?>" required>
 				  </div>
 				 </div>
-				 
+
 				<div class="col-md-4">
 				  <div class="form-group">
 				    <label for="alternat_mobile">Alternat Mobile</label>
@@ -31,7 +31,7 @@
 				  </div>
 				</div>
 			</div>
-		
+
 			<div class="row">
 		  	 	<div class="col-md-4">
 				  <div class="form-group">

@@ -138,7 +138,7 @@
 			  	</div>  
 			</div>
 
-			 <div class="row">			 			 	
+			 <!-- <div class="row">			 			 	
 				<div class="col-md-10"> 
 					<div class="form-group">
 						<a onclick="addMoreRows(this.form);" class="btn btn-info btn-sm">Add More(Plat Number/Description)</a>
@@ -146,7 +146,7 @@
 						<div id="addedRows"></div>
 					</div>
 				</div>
-			</div> 
+			</div> -->
 
 			 <div class="row">
 			 	<div class="col-md-4">
