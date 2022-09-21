@@ -67,28 +67,36 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home Rental</title>
+    <title>App</title>
+    
+    
+
+
 
     <!-- Bootstrap core CSS -->
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
+    <!--Custom fonts for this template -->
     <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+  
     <!-- Custom styles for this template -->
     <link href="assets/css/rent.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+   
   </head>
 
   <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home Logo</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Rentals</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -98,6 +106,9 @@
            
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#search">Search</a>
+            </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">aboutus</a>
             </li>
             
             <?php 
@@ -111,6 +122,7 @@
                echo '</li>';
               }
             ?>
+           
             
 
             <li class="nav-item">
@@ -138,7 +150,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Search</h2>
-            <h3 class="section-subheading text-muted">Search rooms or homes for hire.</h3>
+            <h3 class="section-subheading text-muted">Search rooms or homes for rent.</h3>
           </div>
         </div>
         <div class="row">
@@ -187,7 +199,7 @@
                             <h4 class="text-center">Owner Details</h4>';
                               echo '<p><b>Owner Name: </b>'.$value['fullname'].'</p>';
                               echo '<p><b>Mobile Number: </b>'.$value['mobile'].'</p>';
-                              echo '<p><b>Alternate Number: </b>'.$value['alternat_mobile'].'</p>';
+                             // echo '<p><b>Alternate Number: </b>'.$value['alternat_mobile'].'</p>';
                               echo '<p><b>Email: </b>'.$value['email'].'</p>';
                               echo '<p><b>Country: </b>'.$value['country'].'</p><p><b> State: </b>'.$value['state'].'</p><p><b> City: </b>'.$value['city'].'</p>';
                               if ($value['image'] !== 'uploads/') {
@@ -233,9 +245,68 @@
         </div>
       </div>
       <br><br><br><br><br><br>
-    </section>    
+    
 
-    <!-- Footer -->
+  <!--team Member-->
+
+<div>
+<link href="assets/css/member.css" rel="stylesheet">
+
+<div id="team" name="team">
+<div class="container">
+<div class="row centered">
+<h2 class="centered">MEET OUR AWESOME TEAM</h2>
+<hr>
+<div class="col-lg-3 teamborder team-md"> 
+<img class="img img-circle" src="assets/img/aneel.jpg" height="200px" width="200px" alt="">
+<h4>Anil Kumar Tiwari</h4>
+<p>Web developer</p>
+<a href="https://www.facebook.com/aniltiwari645"><i class="fa fa-facebook"></i></a> 
+<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinkedin.com%2Fin%2FAnil%2520Tiwari%3Ffbclid%3DIwAR0pi05-Z4U2hq5fGgX7J48OHF46mkYKyejvWxY5Awm2TfaWppaqBd8UfKM&h=AT3k6XSse7zjzAiSJBtIfqQl43d1doTIP4VHMTWkrqqaYnYUg70udN6MpowzzcknJnxPSmNUOe5EZkFbqru1KAmGGKY0FuWFuOXCYCeRMqNOTHSVrRwjDhwIXCZWU1ugDR2i"><i class="fa fa-linkedin"></i></a> 
+</div>
+
+<div class="col-lg-3 teamborder team-md"> 
+ 
+<img class="img img-circle" src="assets/img/bidhu.jpg" height="200px" width="200px" alt="">
+<h4>Bidhata Pandey</h4>
+<p> Web developer</p>
+<a href="https://www.facebook.com/bidhata.pandey.3"><i class="fa fa-facebook"></i></a> 
+<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Flinkedin.com%2Fin%2FBidhata%2520Pandey%3Ffbclid%3DIwAR1T1BB1ucWQvqUTrzwNk8yqSPD4TH16NnYXABE-rLm9Xdya3IoNjVrP_x8&h=AT1FZ2pl122HBQXCCm_t2PyZWWbqmMkIRTKtEyQv_69sihlIgRXti8Q_4Cizb_4oJ4mubHrd5IkP-rWGJA9jsWSu8fSt1RSi2TJXvOhxhVgHpb5cfvMChHK_5O6IZf8J49ba"><i class="fa fa-linkedin"></i></a> 
+</div>
+<div class="col-lg-3 teamborder team-md"> 
+<img class="img img-circle" src="assets/img/lokesh.jpg" height="200px" width="200px" alt="">
+<h4>Lokesh Subedi</h4>
+<p>Web develper</p>
+<a href="https://www.facebook.com/thelokesh.subedi"><i class="fa fa-facebook"></i></a> 
+<a href="https://www.linkedin.com/in/thelokesh-subedi-97665b206"><i class="fa fa-linkedin"></i></a> 
+</div>
+<div class="col-lg-3 teamborder team-md"> 
+<img class="img img-circle" src="assets/img/prasiddhi.jpg" height="200px" width="200px" alt="">
+<h4>Prasiddhi Adhikari</h4>
+<p> Web developer</p>
+<a href="#"><i class="fa fa-facebook"></i></a> 
+<a href="#"><i class="fa fa-linkedin"></i></a> 
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+              
+
+</section>
+
+
+
+
+              
+
+            
+
+
+
+<!-- Footer -->
     <footer style="background-color: #ccc;">
       <div class="container">
         <div class="row">
@@ -244,11 +315,7 @@
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
+              
               <li class="list-inline-item">
                 <a href="#">
                   <i class="fa fa-facebook"></i>
