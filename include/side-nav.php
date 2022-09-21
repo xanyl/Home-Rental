@@ -108,7 +108,7 @@
             
             <ul class="logout-mode">
               <li><a href="#">
-                    <i class="uil uil-signout"></i>
+                 <i class="uil uil-user-circle"></i>
                     <span class="link-name"><?php echo $_SESSION['fullname']; ?> <?php if($_SESSION['role'] == 'admin'){ echo "(Admin)"; } ?></span>
                 </a></li>
                 <li><a href="logout.php">
