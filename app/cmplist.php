@@ -22,7 +22,7 @@
 	
 	
 
-<section class="wrapper " style="margin-left:16%;margin-top: -5%;">
+<section class="wrapper " style="margin-left:16%;margin-top: 5%;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -36,7 +36,7 @@
 						echo '<table class="table table-bordered">';
 						echo '<thead>';
 						echo '<tr>';
-						echo '<th>Apartment/Room</th>';
+						echo '<th>Name/Apartment/Room</th>';
 						echo '<th>Complaints</th>';
 						echo '<th>Full Name</th>';
 						echo '</tr>';

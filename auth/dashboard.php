@@ -88,9 +88,10 @@ include '../include/side-nav.php';?>
 								echo '</div>';
 							} 
 							else{
-								echo 'Registered Rooms:';
+								
+								echo 'Admin Registered Rooms:';
 								echo '<br>';
-								echo '&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;';
+								echo '&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;';
 								echo '  <span class="number">
 							
 										<span class="badge badge-pill badge-success">'.$total_auth_user_rent['total_auth_user_rent'].'</span>

@@ -194,7 +194,7 @@
     </nav> -->
 	<!-- end header nav -->
 
-<section class="wrapper" style="margin-left:20%;margin-top:-5%;">
+<section class="wrapper" style="margin-left:20%;margin-top:5%;">
 	<!-- Nav tabs -->
 	<ul class="nav nav-tabs " role="tablist">
 	  <li class="nav-item">

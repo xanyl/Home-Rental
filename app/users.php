@@ -17,7 +17,7 @@
 <?php include '../include/header.php';?>
 	
 
-<section class="wrapper" style="margin-left:16%;margin-top: ;">
+<section class="wrapper" style="margin-left:16%;margin-top:5% ;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">

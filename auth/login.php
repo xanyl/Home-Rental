@@ -63,7 +63,7 @@
     <section id="services">
 		<div class="container">
 			<div class="row">				
-			  <div class="col-md-4 mx-auto">
+			  <div class="col-md-4 mx-auto "  style="margin-top: 5%;">
 			  	<div class="alert alert-info" role="alert">
 			  		<?php
 						if(isset($errMsg)){

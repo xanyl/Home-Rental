@@ -77,6 +77,15 @@
                   </a>';
 	      	 	} ?> 
               </li>
+                <li>
+                    
+                <?php if( $_SESSION['role'] == 'user'){ 
+                echo '<a href="../app/complaint.php">
+	        	    <i class="uil uil-signin"></i>
+                 <span class="link-name">Complaint</span>
+                  </a>';
+	      	 	} ?> 
+              </li>
                 <li><a href="../app/list.php">
                   <i class="uil uil-document-info"></i>
                   <span class="link-name">Details/Update</span>
@@ -111,7 +120,7 @@
                  <i class="uil uil-user-circle"></i>
                     <span class="link-name"><?php echo $_SESSION['fullname']; ?> <?php if($_SESSION['role'] == 'admin'){ echo "(Admin)"; } ?></span>
                 </a></li>
-                <li><a href="logout.php">
+                <li><a href="../auth/logout.php">
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>

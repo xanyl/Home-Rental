@@ -29,7 +29,7 @@
 
 	
 
-<section class="wrapper" style="margin-left: 16%;margin-top: -23%;">
+<section class="wrapper" style="margin-left: 16%;margin-top: 5%;">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">

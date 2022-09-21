@@ -175,7 +175,7 @@
 <?php include '../include/header.php';?>
 	
 
-<section class="wrapper" style="margin-left: 26%;margin-top: %;">
+<section class="wrapper" style="margin-left: 20%;margin-top: 5%;">
 <div class =" ">
 <h2 class='center ml-4'>Update</h2>
 	<?php
